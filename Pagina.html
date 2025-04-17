@@ -12,23 +12,34 @@
             <input type="text" id="input">
             <button onclick="guardarNome()" id="nome" >Nome</button>
             <button onclick="guardarIdade()" id="idade">Idade</button>
-            <button onclick="mostrarValor(event)">3</button>
-            <button onclick="mostrarValor(event)">4</button>
-            <button onclick="mostrarValor(event)">5</button>
-            <button onclick="mostrarValor(event)">6</button>
-            <button onclick="mostrarValor(event)">7</button>
-            <button onclick="mostrarValor(event)">8</button>
-            <button onclick="mostrarValor(event)">9</button>
-            <button onclick="mostrarValor(event)">10</button>
-            <button onclick="mostrarValor(event)">11</button>
-            <button onclick="mostrarValor(event)">12</button>
-            <button onclick="mostrarValor(event)">13</button>
-            <button onclick="mostrarValor(event)">14</button>
-            <button onclick="mostrarValor(event)">15</button>
-            <button onclick="mostrarValor(event)">16</button>
-            <button onclick="mostrarValor(event)">17</button>
-            <button onclick="mostrarValor(event)">18</button>
-            <button onclick="mostrarValor(event)">19</button>
+            <div id="calculadora">
+                <input type="text" id="display" disabled>
+                <div id="teclado">
+                    <button onclick="limpar()">C</button>
+                    <button onclick="adicionarValor('^')">  ^  </button>
+                    <button onclick="adicionarValor('%')">  %  </button>
+                    <button onclick="adicionarValor('/')">  /  </button>
+                    
+                    <button onclick="adicionarValor('7')">7</button>
+                    <button onclick="adicionarValor('8')">8</button>
+                    <button onclick="adicionarValor('9')">9</button>
+                    <button onclick="adicionarValor('*')">  *  </button>
+                    
+                    <button onclick="adicionarValor('4')">4</button>
+                    <button onclick="adicionarValor('5')">5</button>
+                    <button onclick="adicionarValor('6')">6</button>
+                    <button onclick="adicionarValor('+')">+</button>
+                    
+                    <button onclick="adicionarValor('1')">1</button>
+                    <button onclick="adicionarValor('2')">2</button>
+                    <button onclick="adicionarValor('3')">3</button>
+                    <button onclick="adicionarValor('-')">  -  </button>
+                    
+                    <button onclick="adicionarValor('0')" class="zero">0</button>
+                    <button onclick="adicionarValor('.')">.</button>
+                    <button onclick="calcular()">=</button>
+                </div>
+            </div>
         </div>
         <div class="p">
         <p id="nomeDisplay">Nome: </p>
