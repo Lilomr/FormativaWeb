@@ -1,0 +1,10 @@
+input{
+    margin: 5px;
+}
+
+button{
+    margin: 5px;
+    border-radius: 10%;
+    background-color: black;
+    color: aqua;
+}
